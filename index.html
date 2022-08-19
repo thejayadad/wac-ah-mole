@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100hv;
+            align-items: center;
+            flex-direction: column;
+            color: #51e2f5;
+            
+            
+        }
+        .box {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-around;
+            width: 300px;
+        }
+        .grid {
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            background: #edf7f6;
+
+        }
+        .square {
+            height: 80px;
+            width: 80px;
+            border: 1px solid #ffabb6; 
+        }
+        #score, #time {
+            color: black;
+        }
+
+          .mole {
+            background-color: #a28089;
+        }
+        a{
+            padding: 10px;
+            background: #ffabb6;
+            width: 55px;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Score: <span id="score">0</span></h2>
+        <h2>Time:<span id="time">10</span></h2>
+    </div>    
+    <p id="final"></p>
+    <div class="grid">
+        <div id="1" class="square"></div>
+        <div id="2" class="square"></div>
+        <div id="3" class="square"></div>
+        <div id="4" class="square"></div>
+        <div id="5" class="square"></div>
+        <div id="6" class="square"></div>
+        <div id="7" class="square"></div>
+        <div id="8" class="square"></div>
+        <div id="9" class="square"></div>
+
+    </div>
+    <a onclick="moveMole()">Start</a>
+    <script src="main.js">
+    </script>
+</body>
+</html>
